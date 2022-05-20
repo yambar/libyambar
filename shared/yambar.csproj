@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Project">
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup Label="Package References">
+    <PackageReference Include="ppy.osu.Framework" Version="*" />
+  </ItemGroup>
+</Project>
