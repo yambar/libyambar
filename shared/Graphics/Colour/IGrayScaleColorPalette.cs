@@ -2,6 +2,9 @@ using osu.Framework.Graphics;
 
 namespace yambar.Graphics.Colour;
 
+/// <summary>
+/// A color palette with grayscales, from <see cref="Zero"/> to <see cref="F"/>.
+/// </summary>
 public interface IGrayScaleColorPalette
 {
     Colour4 Zero { get; }
