@@ -4,7 +4,7 @@ using osu.Framework.Platform;
 
 namespace yambar.Tests;
 
-public class VisualTestApplication : TestApplicaton
+public class VisualTestApplication : TestApplication
 {
     [BackgroundDependencyLoader]
     private void load()
