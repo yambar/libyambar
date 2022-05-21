@@ -15,7 +15,7 @@ jobs:
           os:
             - { prettyName: Windows }
             - { prettyName: macOS }
-            - { prettyName: Linux }
+            - { prettyName: Ubuntu }
     timeout-minutes: 5
     steps:
       - name: Annotate CI run with test results
