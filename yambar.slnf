@@ -1,0 +1,9 @@
+{
+  "solution": {
+    "path": "yambar.sln",
+    "projects": [
+      "tests\\yambar.Tests.csproj",
+      "shared\\yambar.csproj"
+    ]
+  }
+}
