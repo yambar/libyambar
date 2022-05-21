@@ -5,6 +5,9 @@
       <PackagePath>icon.png</PackagePath>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <None Include=".github\README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
   <ItemGroup Label="Code Analysis">
     <PackageReference Include="Microsoft.CodeAnalysis.BannedApiAnalyzers" Version="3.3.3" PrivateAssets="All" />
     <AdditionalFiles Include="$(MSBuildThisFileDirectory)analysis\banned_symbols.txt" />
@@ -20,6 +23,7 @@
     <PackageReleaseNotes>Automated release.</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/yambar/libyambar</PackageProjectUrl>
     <RepositoryUrl>https://github.com/yambar/libyambar</RepositoryUrl>
   </PropertyGroup>
