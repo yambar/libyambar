@@ -3,7 +3,15 @@
     <TargetFramework>net6.0</TargetFramework>
     <NoWarn>$(NoWarn);CS1591;NU5104</NoWarn>
   </PropertyGroup>
-
+  <PropertyGroup Label="NuGet">
+    <Title>libyambar</Title>
+    <AssemblyTitle>yambar</AssemblyTitle>
+    <AssemblyName>yambar</AssemblyName>
+    <PackageId>yambar.libyambar</PackageId>
+    <PackageReleaseNotes>Automated release.</PackageReleaseNotes>
+    <PackageTags>osu framework yambar libyambar</PackageTags>
+    <Description>Yambar Design System for osu!framework.</Description>
+  </PropertyGroup>
   <ItemGroup Label="Package References">
     <PackageReference Include="ppy.osu.Framework" Version="*" />
   </ItemGroup>
