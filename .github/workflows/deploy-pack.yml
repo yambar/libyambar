@@ -1,5 +1,5 @@
 on: workflow_dispatch
-name: Deploy - Templates
+name: Deploy - libyambar
 
 jobs:
   check-if-tag:
@@ -27,8 +27,8 @@ jobs:
             echo "fatal: no tag detected for HEAD. Workflow will now stop."
             exit 128;
           fi
-  pack-templates:
-    name: Pack Templates
+  pack:
+    name: Pack
     runs-on: windows-latest
     needs: [check-if-tag]
     defaults:
@@ -58,13 +58,13 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: yambar-templates
+          name: libyambar
           path: ${{steps.artifactsPath.outputs.nuget_artifacts}}\*.nupkg
 
   release:
     name: Release
     runs-on: ubuntu-latest
-    needs: [check-if-tag, pack-templates]
+    needs: [check-if-tag, pack]
     steps:
       - name: Create Artifact Directory
         run: mkdir ${{github.workspace}}/artifacts/
