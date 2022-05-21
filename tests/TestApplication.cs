@@ -10,7 +10,7 @@ using ofApplication = osu.Framework.Game;
 namespace yambar.Tests;
 
 [Cached]
-public class TestApplicaton : ofApplication
+public class TestApplication : ofApplication
 {
     public Bindable<bool> BlockExit => new();
 

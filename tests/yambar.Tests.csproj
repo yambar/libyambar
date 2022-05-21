@@ -3,9 +3,16 @@
     <TargetFramework>net6.0</TargetFramework>
     <OutputType>Exe</OutputType>
     <NoWarn>$(NoWarn);CS1591;NU5104</NoWarn>
-  </PropertyGroup>
+    <GenerateProgramFile>false</GenerateProgramFile>
 
+  </PropertyGroup>
   <ItemGroup Label="Project References">
     <ProjectReference Include="../shared/yambar.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Label="Package References">
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
+    <PackageReference Include="NUnit" Version="3.13.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
   </ItemGroup>
 </Project>
