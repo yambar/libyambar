@@ -1,4 +1,7 @@
-<img src="../assets/logo.png" align="center" style="margin: 50px" />
+<p align="center">
+    <img src="https://raw.githubusercontent.com/yambar/libyambar/development/assets/wallpaper-dark.png#gh-light-mode-only">
+    <img src="https://raw.githubusercontent.com/yambar/libyambar/development/assets/wallpaper-light.png#gh-dark-mode-only">
+</p>
 
 <h1 align="center">
 Yambar Design for o!f
